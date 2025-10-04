@@ -1,0 +1,32 @@
+<div class="main-container" *ngIf="todo$ | async as todo; else loading">
+    <div class="secondary">
+        <div class="table-container" >
+            <h2>Todo Details</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>ID</td>
+                        <td>{{ todo.id }}</td>
+                    </tr>
+                    <tr>
+                        <td>Title</td>
+                        <td>{{ todo.title }}</td>
+                    </tr>
+                    <tr>
+                        <td>Description</td>
+                        <td>{{ todo.description }}</td>
+                    </tr>
+                    <tr>
+                        <td>Completed</td>
+                        <td>{{ todo.isCompleted }}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+<ng-template #loading>
+  <p>Loading todo details...</p>
+</ng-template>

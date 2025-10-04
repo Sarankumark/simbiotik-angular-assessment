@@ -1,0 +1,42 @@
+<div class="main-container">
+    <div class="secondary">
+        <div class="form-container">
+            <form [formGroup]="form" (ngSubmit)="submit()" class="bg-white p-8 rounded-2xl shadow-md w-full max-w-md">
+                <div class="title">
+                    <h2>{{ isEdit ? 'Edit Todo' : 'Add Todo' }}</h2>
+                </div>
+        
+                <div class="inputs">
+                    <div class="input-container">
+                      <label class="label">Title</label>
+                      <input
+                        type="text"
+                        formControlName="title"
+                        placeholder="Title"
+                      />
+                    </div>
+                    <div class="input-container">
+                      <label class="label">Description</label>
+                      <input
+                        type="text"
+                        formControlName="description"
+                        placeholder="Description"
+                      />
+                    </div>
+              
+                    <div class="checkbox-container">
+                      <input type="checkbox" formControlName="isCompleted" class="form-check-input" id="completedCheck" />
+                      <label for="completedCheck" class="label">Completed</label>
+                    </div>
+                </div>
+        
+              <button
+                type="submit"
+                [disabled]="form.invalid"
+              >
+                {{ isEdit ? 'Update' : 'Create' }}
+              </button>
+            </form>
+        </div>
+    </div>
+</div>

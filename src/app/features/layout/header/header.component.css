@@ -1,0 +1,27 @@
+header {
+    width: 100%;
+    background-color: #215076;
+
+    /* .header-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 1rem;
+    } */
+}
+
+button {
+    padding: 4px 10px;
+    margin-right: 0.2rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #e9f5fc;
+    color: #215076;
+}
+

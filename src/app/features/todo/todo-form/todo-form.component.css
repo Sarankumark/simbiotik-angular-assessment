@@ -1,0 +1,74 @@
+.main-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 1rem;
+    
+    .secondary {
+        width: 50%;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        transition: box-shadow 0.3s ease;
+
+        .form-container {
+            margin: 1rem;
+            .title {
+                margin-bottom: 1rem;
+            }
+            .inputs {
+                margin-bottom: 1rem;
+                .input-container {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 2rem;
+            
+                    .label {
+                        font-size: 0.8rem;
+                        margin-bottom: 0.3rem;
+                        font-weight: bold;
+                    }
+                    input {
+                        padding: 0.5rem 0.5rem;
+                        border-radius: 0.3rem;
+                        border: solid 1px #cfdeea;
+                        font-weight: 100;
+                        color: #565658;
+                        outline: none;
+                        font-size: 0.8rem;
+                    }
+                }
+                .checkbox-container {
+                    display: flex;
+                    gap: 0.3rem;
+                }
+            }
+        }
+    }
+    
+
+}
+
+
+.form-container button {
+  background-color: #215076; 
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #215076; 
+}
+
+.form-container button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

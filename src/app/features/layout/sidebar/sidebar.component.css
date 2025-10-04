@@ -1,0 +1,25 @@
+.sidebar {
+  width: 30vb;
+  background-color: #F4F8FB; /* gray-900 */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: solid 1px #cfdeea;
+}
+
+.sidebar a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.sidebar a.active-link, .sidebar a:hover {
+  background-color: #DDE8ED; 
+  border-radius: 1rem;
+  font-weight: bold;
+}
